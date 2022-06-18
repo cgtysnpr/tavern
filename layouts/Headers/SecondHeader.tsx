@@ -64,7 +64,7 @@ const SecondHeader = () => {
                 spacing={2.3}
                 sx={{
                   pl: { xs: "unset", md: "unset", lg: 10 },
-                  display: { xs: "none", md: "none", lg: "none" },
+                  display: { xs: "none", md: "none", lg: "flex" },
                 }}
               >
                 <Link href="#">

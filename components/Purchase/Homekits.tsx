@@ -117,7 +117,7 @@ const Homekits = () => {
       >
         {itemValue.map((data, i) => (
           <Box
-            key={`itemValue${i}`}
+            key={`homeitemValue${i}`}
             sx={{
               display: "flex",
               gap: 2,
