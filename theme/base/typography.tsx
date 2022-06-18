@@ -35,7 +35,7 @@ const typography = {
   h2: {
     fontSize: "32px",
     "@media (min-width:992px)": {
-      fontSize: "40px",
+      fontSize: "32px",
     },
     lineHeight: 1.3,
 
@@ -62,7 +62,7 @@ const typography = {
     ...baseHeadingProperties,
   },
   h5: {
-    fontSize: "16px",
+    fontSize: "20px",
     "@media (min-width:992px)": {
       fontSize: "20px",
     },

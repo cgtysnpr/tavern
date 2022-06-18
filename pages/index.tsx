@@ -1,6 +1,5 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, Button } from "@mui/material";
 import Image from "next/image";
-import Button from "@mui/material/Button";
 import IndexLayout from "../layouts/IndexLayout";
 import type { ReactElement } from "react";
 export default function Home() {
@@ -32,7 +31,7 @@ export default function Home() {
           <Box>
             <Typography
               color="primary.light"
-              sx={{ filter: "drop-shadow(0 25px 25px rgb(0 0 0/0.15))" }}
+              sx={{ filter: "drop-shadow(0 25px 25px rgb(0 0 0/0.15))", textAlign:'center' }}
               variant="h1"
               component="h1"
             >
@@ -63,6 +62,7 @@ export default function Home() {
               fontWeight: "fontWeightBold",
               border: "1px solid",
               borderColor: "primary.dark",
+              color:"primary.light",
               mb: 16,
               "&:hover": {
                 border: "1px solid",
@@ -73,7 +73,7 @@ export default function Home() {
           >
             Click here to become a BREWER
           </Button>
-          <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 3 }}>
+          <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: {xs:'unset',md:'unset',lg:3},}}>
             <Typography
               variant="h5"
               sx={{ fontWeight: "fontWeightMedium" }}

@@ -43,3 +43,12 @@ a {
   transform: scale(1.2);
   color:#a16207;
 }
+.icon-3{
+  width: 20px; 
+  height: 25px; 
+  color:#ffedd5;
+  cursor: pointer;
+}
+.icon-3:hover{
+  color:#a16207;
+}

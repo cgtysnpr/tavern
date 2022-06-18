@@ -1,8 +1,9 @@
-import "../styles/globals.css";
+
 import type { AppProps } from "next/app";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import type { ReactElement, ReactNode } from "react";
 import type { NextPage } from "next";
+import "../styles/globals.css";
 import theme from "../theme";
 type NextPageWithLayout = NextPage & {
   getLayout?: (page: ReactElement) => ReactNode;

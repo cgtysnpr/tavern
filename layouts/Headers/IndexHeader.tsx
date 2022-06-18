@@ -27,11 +27,15 @@ const IndexHeader = () => {
             width: "100%",
             height: "100%",
             display: "flex",
-            justifyContent: "flex-start",
+            justifyContent: { xs: "center", md: "center", lg: "flex-start" },
             alignItems: "flex-end",
           }}
         >
-          <Stack direction="row" spacing={2.3} sx={{ pl: 10 }}>
+          <Stack
+            direction="row"
+            spacing={2.3}
+            sx={{ pl: { xs: "unset", md: "unset", lg: 10 } }}
+          >
             <Link href="#">
               <FontAwesomeIcon className="icon-1" icon={faTwitter} />
             </Link>
