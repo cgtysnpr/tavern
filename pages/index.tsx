@@ -1,8 +1,16 @@
+import * as React from "react";
 import { Box, Typography, Button } from "@mui/material";
+
 import Image from "next/image";
 import IndexLayout from "../layouts/IndexLayout";
 import type { ReactElement } from "react";
+import { useRouter } from "next/router";
 export default function Home() {
+  const router = useRouter();
+  const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    router.push("/page");
+  };
   return (
     <>
       <Box
@@ -31,7 +39,10 @@ export default function Home() {
           <Box>
             <Typography
               color="primary.light"
-              sx={{ filter: "drop-shadow(0 25px 25px rgb(0 0 0/0.15))", textAlign:'center' }}
+              sx={{
+                filter: "drop-shadow(0 25px 25px rgb(0 0 0/0.15))",
+                textAlign: "center",
+              }}
               variant="h1"
               component="h1"
             >
@@ -53,6 +64,7 @@ export default function Home() {
           </Box>
 
           <Button
+            onClick={(e) => handleClick(e)}
             sx={{
               p: 2,
               borderRadius: "1rem",
@@ -62,7 +74,7 @@ export default function Home() {
               fontWeight: "fontWeightBold",
               border: "1px solid",
               borderColor: "primary.dark",
-              color:"primary.light",
+              color: "primary.light",
               mb: 16,
               "&:hover": {
                 border: "1px solid",
@@ -73,7 +85,14 @@ export default function Home() {
           >
             Click here to become a BREWER
           </Button>
-          <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: {xs:'unset',md:'unset',lg:3},}}>
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              gap: 1,
+              mb: { xs: "unset", md: "unset", lg: 3 },
+            }}
+          >
             <Typography
               variant="h5"
               sx={{ fontWeight: "fontWeightMedium" }}
