@@ -1,4 +1,5 @@
 import { Box, Stack, Typography } from "@mui/material";
+import React from "react";
 const tabsData = [
   { title: "Purchase" },
   { title: "Overview" },
@@ -7,7 +8,11 @@ const tabsData = [
   { title: "Stake" },
   { title: "Marketplace" },
 ];
-export default function Tabs({currentTab, setCurrentTab}) {
+type Props = {
+  currentTab: string;
+  setCurrentTab: (val: string) => void;
+};
+const Tabs: React.FC<Props> = ({ currentTab, setCurrentTab }) => {
   return (
     <>
       <Box
@@ -43,7 +48,7 @@ export default function Tabs({currentTab, setCurrentTab}) {
                   cursor: "pointer",
                   flexWrap: "wrap",
                   gap: 2,
-                  p:{xs:1,md:1,lg:'unset'}
+                  p: { xs: 1, md: 1, lg: "unset" },
                 }}
               >
                 <Box
@@ -83,4 +88,5 @@ export default function Tabs({currentTab, setCurrentTab}) {
       </Box>
     </>
   );
-}
+};
+export default Tabs;
