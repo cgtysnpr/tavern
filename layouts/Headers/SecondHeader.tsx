@@ -7,6 +7,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faBook } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
+import Image from "next/image";
 const SecondHeader = () => {
   return (
     <>
@@ -14,9 +15,13 @@ const SecondHeader = () => {
         position="fixed"
         sx={{
           width: "100%",
-          top:0,
-          height: 84,
-          backgroundColor: "rgb(64 64 64/.5)",
+          top: 0,
+          height: { xs: 94, md: 94, lg: 84 },
+          backgroundColor: {
+            xs: "rgb(255 237 213)",
+            md: "rgb(255 237 213)",
+            lg: "rgb(64 64 64/.5)",
+          },
           border: "none",
           display: "flex",
           alignItems: "center",
@@ -33,14 +38,34 @@ const SecondHeader = () => {
               sx={{
                 display: "flex",
                 height: 84,
-                justifyContent: "space-between",
+                justifyContent: {
+                  xs: "flex-start",
+                  md: "flex-start",
+                  lg: "space-between",
+                },
                 alignItems: "center",
               }}
             >
+              <Box
+                sx={{
+                  display: { xs: "flex", md: "flex", lg: "none" },
+                  justifyContent: "center",
+                }}
+              >
+                <Image
+                  src="/images/header-tavern.png"
+                  alt={"brewery"}
+                  width="68px"
+                  height="68px"
+                />
+              </Box>
               <Stack
                 direction="row"
                 spacing={2.3}
-                sx={{ pl: { xs: "unset", md: "unset", lg: 10 } }}
+                sx={{
+                  pl: { xs: "unset", md: "unset", lg: 10 },
+                  display: { xs: "none", md: "none", lg: "none" },
+                }}
               >
                 <Link href="#">
                   <FontAwesomeIcon className="icon-1" icon={faTwitter} />
@@ -71,6 +96,7 @@ const SecondHeader = () => {
                     border: "1px solid",
                     borderColor: "secondary.dark",
                     color: "white",
+                    display: { xs: "none", md: "none", lg: "block" },
                     "&:hover": {
                       border: "1px solid",
                       borderColor: "secondary.main",
@@ -90,11 +116,19 @@ const SecondHeader = () => {
                     fontSize: "16px",
                     fontWeight: "fontWeightBold",
                     border: "1px solid",
-                    borderColor: "info.main",
+                    borderColor: {
+                      xs: "info.light",
+                      md: "info.light",
+                      lg: "info.main",
+                    },
                     color: "info.light",
                     "&:hover": {
                       border: "1px solid",
-                      borderColor: "info.main",
+                      borderColor: {
+                        xs: "info.light",
+                        md: "info.light",
+                        lg: "info.main",
+                      },
                       color: "info.main",
                     },
                   }}

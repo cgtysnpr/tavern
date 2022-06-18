@@ -7,7 +7,7 @@ const tabsData = [
   { title: "Stake" },
   { title: "Marketplace" },
 ];
-export default function Tabs() {
+export default function Tabs({currentTab, setCurrentTab}) {
   return (
     <>
       <Box
@@ -36,6 +36,7 @@ export default function Tabs() {
             <>
               <Box
                 key={`tabsData${i}`}
+                onClick={() => setCurrentTab(data.title)}
                 sx={{
                   display: "flex",
                   alignItems: "center",
@@ -49,7 +50,7 @@ export default function Tabs() {
                   sx={{
                     display: "flex",
                     gap: 1,
-                    ...(data.title === "Purchase" && {
+                    ...(data.title === currentTab && {
                       borderBottom: "2px solid",
                       borderColor: "primary.main",
                       marginBottom: "-2px",
@@ -63,7 +64,7 @@ export default function Tabs() {
                 >
                   <Typography
                     sx={{
-                      ...(data.title === "Purchase" && {
+                      ...(data.title === currentTab && {
                         color: "primary.main",
                       }),
                       fontWeight: "fontWeightMedium",
