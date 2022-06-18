@@ -22,14 +22,15 @@ export default function Page() {
           backgroundAttachment: "fixed",
         }}
       >
-        <Container maxWidth="xl" sx={{mb:6}}>
+        <Container maxWidth="xl" sx={{ mb: 6 }}>
           <Grid item container spacing={6} sx={{ mt: 10 }}>
             <Grid item xs={12} md={12} lg={2.5} sx={{ mt: 6 }}>
               <Side />
             </Grid>
             <Grid item xs={12} md={12} lg={8} sx={{ mt: 1 }}>
               <Tabs currentTab={currentTab} setCurrentTab={setCurrentTab} />
-              {currentTab === "Purchase" ? <Purchase /> : <Overview />}
+              {currentTab === "Purchase" ? <Purchase /> : null}
+              {currentTab === "Overview" ? <Overview /> : null}
             </Grid>
           </Grid>
         </Container>

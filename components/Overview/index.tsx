@@ -6,7 +6,7 @@ import CurrentRewards from "./CurrentRewards";
 const Overview = () => {
   return (
     <>
-      <Container maxWidth="md" sx={{mx:{xs:0,md:0,lg:6}, mb:5}}>
+      <Container maxWidth="md" sx={{ mx: { xs: 0, md: 0, lg: 6 }, mb: 5 }}>
         <Typography
           color="primary.light"
           variant="subtitle2"

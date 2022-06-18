@@ -1,13 +1,12 @@
-import IndexHeader from "./Headers/IndexHeader"
+import IndexHeader from "./Headers/IndexHeader";
 type Props = {
-    children: JSX.Element,
-  };
+  children: JSX.Element;
+};
 export default function Layout({ children }: Props) {
-  
-    return (
-      <>
-        <IndexHeader />
-        <main>{children}</main>
-      </>
-    )
-  }
+  return (
+    <>
+      <IndexHeader />
+      <main>{children}</main>
+    </>
+  );
+}

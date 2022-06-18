@@ -1,4 +1,3 @@
-
 import type { AppProps } from "next/app";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import type { ReactElement, ReactNode } from "react";
@@ -18,8 +17,7 @@ export default function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-     { getLayout(
-      <Component {...pageProps} />)}
+      {getLayout(<Component {...pageProps} />)}
     </ThemeProvider>
   );
 }

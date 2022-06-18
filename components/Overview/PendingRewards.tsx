@@ -1,79 +1,79 @@
 import { Typography, Box, Button } from "@mui/material";
 import Image from "next/image";
-import { styled } from '@mui/material/styles';
+import { styled } from "@mui/material/styles";
 const DisabledButton = styled(Button)({
-    boxShadow: 'none',
-    textTransform: 'none',
-    fontSize: 16,
-    padding: '6px 12px',
-    border: '1px solid',
-    lineHeight: 1.5,
-    backgroundColor: 'rgb(107 114 128)',
-    borderColor: 'rgb(107 114 128)',
-    fontFamily: [
-        '-apple-system',
-        'BlinkMacSystemFont',
-        '"Segoe UI"',
-        'Roboto',
-        '"Helvetica Neue"',
-        'Arial',
-        'Gideon Roman',
-        'sans-serif',
-        '"Apple Color Emoji"',
-        '"Segoe UI Emoji"',
-        '"Segoe UI Symbol"',
-      ].join(','),
-    '&:hover': {
-      backgroundColor: 'rgb(107 114 128)',
-      borderColor: 'rgb(107 114 128)',
-      boxShadow: 'none',
-    },
-    '&:active': {
-      boxShadow: 'none',
-      backgroundColor: 'rgb(107 114 128)',
-      borderColor: '#005cbf',
-    },
-    '&:focus': {
-      boxShadow: '0 0 0 0.2rem rgba(0,123,255,.5)',
-    },
-  });
-  const ActiveButton = styled(Button)({
-    boxShadow: 'none',
-    textTransform: 'none',
-    fontSize: 16,
-    padding: '6px 12px',
-    border: '1px solid',
-    lineHeight: 1.5,
-    backgroundColor: 'rgb(59 130 246)',
-    borderColor: 'rgb(59 130 246)',
-    fontFamily: [
-        '-apple-system',
-        'BlinkMacSystemFont',
-        '"Segoe UI"',
-        'Roboto',
-        '"Helvetica Neue"',
-        'Arial',
-        'Gideon Roman',
-        'sans-serif',
-        '"Apple Color Emoji"',
-        '"Segoe UI Emoji"',
-        '"Segoe UI Symbol"',
-      ].join(','),
-    '&:hover': {
-      backgroundColor: 'rgb(59 130 246)',
-      borderColor: 'rgb(59 130 246)',
-      boxShadow: 'none',
-      transform:'scale(1.05)'
-    },
-    '&:active': {
-      boxShadow: 'none',
-      backgroundColor: 'rgb(107 114 128)',
-      borderColor: '#005cbf',
-    },
-    '&:focus': {
-      boxShadow: '0 0 0 0.2rem rgba(0,123,255,.5)',
-    },
-  });
+  boxShadow: "none",
+  textTransform: "none",
+  fontSize: 16,
+  padding: "6px 12px",
+  border: "1px solid",
+  lineHeight: 1.5,
+  backgroundColor: "rgb(107 114 128)",
+  borderColor: "rgb(107 114 128)",
+  fontFamily: [
+    "-apple-system",
+    "BlinkMacSystemFont",
+    '"Segoe UI"',
+    "Roboto",
+    '"Helvetica Neue"',
+    "Arial",
+    "Gideon Roman",
+    "sans-serif",
+    '"Apple Color Emoji"',
+    '"Segoe UI Emoji"',
+    '"Segoe UI Symbol"',
+  ].join(","),
+  "&:hover": {
+    backgroundColor: "rgb(107 114 128)",
+    borderColor: "rgb(107 114 128)",
+    boxShadow: "none",
+  },
+  "&:active": {
+    boxShadow: "none",
+    backgroundColor: "rgb(107 114 128)",
+    borderColor: "#005cbf",
+  },
+  "&:focus": {
+    boxShadow: "0 0 0 0.2rem rgba(0,123,255,.5)",
+  },
+});
+const ActiveButton = styled(Button)({
+  boxShadow: "none",
+  textTransform: "none",
+  fontSize: 16,
+  padding: "6px 12px",
+  border: "1px solid",
+  lineHeight: 1.5,
+  backgroundColor: "rgb(59 130 246)",
+  borderColor: "rgb(59 130 246)",
+  fontFamily: [
+    "-apple-system",
+    "BlinkMacSystemFont",
+    '"Segoe UI"',
+    "Roboto",
+    '"Helvetica Neue"',
+    "Arial",
+    "Gideon Roman",
+    "sans-serif",
+    '"Apple Color Emoji"',
+    '"Segoe UI Emoji"',
+    '"Segoe UI Symbol"',
+  ].join(","),
+  "&:hover": {
+    backgroundColor: "rgb(59 130 246)",
+    borderColor: "rgb(59 130 246)",
+    boxShadow: "none",
+    transform: "scale(1.05)",
+  },
+  "&:active": {
+    boxShadow: "none",
+    backgroundColor: "rgb(107 114 128)",
+    borderColor: "#005cbf",
+  },
+  "&:focus": {
+    boxShadow: "0 0 0 0.2rem rgba(0,123,255,.5)",
+  },
+});
 const PendingRewards = () => {
   return (
     <>
@@ -123,8 +123,18 @@ const PendingRewards = () => {
         >
           Value: ~$0
         </Typography>
-        <DisabledButton sx={{width:'100%',mt:2, borderRadius:".75rem"}} variant="contained">Claim All</DisabledButton>
-        <ActiveButton sx={{width:'100%',mt:2, borderRadius:".75rem"}} variant="contained">Compound All</ActiveButton>
+        <DisabledButton
+          sx={{ width: "100%", mt: 2, borderRadius: ".75rem" }}
+          variant="contained"
+        >
+          Claim All
+        </DisabledButton>
+        <ActiveButton
+          sx={{ width: "100%", mt: 2, borderRadius: ".75rem" }}
+          variant="contained"
+        >
+          Compound All
+        </ActiveButton>
       </Box>
       <Box
         sx={{

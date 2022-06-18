@@ -15,15 +15,15 @@ const colors = {
     dark: "#fcba0300",
   },
   warning: {
-    main:"#fed7aa",
-    light:"#fed7aa",
-    dark:"#fed7aa"
+    main: "#fed7aa",
+    light: "#fed7aa",
+    dark: "#fed7aa",
   },
   success: {
-    main:"#22c55e",
-    light:"#16a34a",
-    dark:"#16a34a",
-    contrastText: "#fff"
-  }
+    main: "#22c55e",
+    light: "#16a34a",
+    dark: "#16a34a",
+    contrastText: "#fff",
+  },
 };
 export default colors;

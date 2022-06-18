@@ -1,4 +1,4 @@
-import { Box, Stack, Typography, TextField , Button} from "@mui/material";
+import { Box, Stack, Typography, TextField, Button } from "@mui/material";
 import Image from "next/image";
 import { styled } from "@mui/system";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -30,14 +30,14 @@ const itemValue = [
     value: "0",
   },
 ];
-const NewTextField = styled(TextField)(({ theme }) =>({
+const NewTextField = styled(TextField)(({ theme }) => ({
   color: "#000",
   backgroundColor: "rgb(255 237 213)",
-  [theme.breakpoints.down('md')]: {
-    width: '20%',
+  [theme.breakpoints.down("md")]: {
+    width: "20%",
   },
-  [theme.breakpoints.up('md')]: {
-    width: '12%',
+  [theme.breakpoints.up("md")]: {
+    width: "12%",
   },
   borderRadius: 8,
   textAlign: "end",
@@ -109,7 +109,11 @@ const Homekits = () => {
       <Box
         sx={{
           display: "flex",
-          justifyContent: {xs:'flex-start',md:'flex-start',lg:"flex-end"},
+          justifyContent: {
+            xs: "flex-start",
+            md: "flex-start",
+            lg: "flex-end",
+          },
           mt: 2,
           alignItems: "center",
           flexWrap: "wrap",
@@ -121,14 +125,14 @@ const Homekits = () => {
             sx={{
               display: "flex",
               gap: 2,
-              pr:1,
+              pr: 1,
               flexBasis: "40%",
               textAlign: "center",
             }}
           >
             <Typography
               color="rgb(253 186 116)"
-              sx={{ textAlign: "center",  }}
+              sx={{ textAlign: "center" }}
               component="p"
               noWrap
             >
@@ -137,7 +141,7 @@ const Homekits = () => {
             </Typography>{" "}
             <Typography
               color="primary.light"
-              sx={{ textAlign: "center", }}
+              sx={{ textAlign: "center" }}
               component="p"
               noWrap
             >
@@ -178,7 +182,14 @@ const Homekits = () => {
             MEAD
           </Typography>
         </Box>
-        <Box sx={{ cursor: "pointer", display: "flex", alignItems: "center", gap:1 }}>
+        <Box
+          sx={{
+            cursor: "pointer",
+            display: "flex",
+            alignItems: "center",
+            gap: 1,
+          }}
+        >
           <Typography
             color="primary.light"
             sx={{
@@ -193,12 +204,19 @@ const Homekits = () => {
           </Typography>
           <Chip sx={{ mt: 4 }} label="Discount: 0%" color="warning" />
         </Box>
-        <Box sx={{ cursor: "pointer", display: "flex", alignItems: "center", gap:1 }}>
+        <Box
+          sx={{
+            cursor: "pointer",
+            display: "flex",
+            alignItems: "center",
+            gap: 1,
+          }}
+        >
           <Typography
             color="primary.light"
             sx={{
               textAlign: "center",
-              whiteSpace:"normal",
+              whiteSpace: "normal",
               mt: 4,
               "&:hover": { color: "rgb(251 146 60)" },
             }}
@@ -212,14 +230,25 @@ const Homekits = () => {
       </Stack>
       <Typography
         color="primary.light"
-        sx={{ textAlign: "center",mt:4 }}
+        sx={{ textAlign: "center", mt: 4 }}
         component="p"
       >
         Pay using MEAD:
       </Typography>
-      <Button sx={{width:'100%',mt:2, borderRadius:".75rem", "&:hover":{
-        transform:"scale(1.05)"
-      }}} color="success" variant="contained">Buy</Button>
+      <Button
+        sx={{
+          width: "100%",
+          mt: 2,
+          borderRadius: ".75rem",
+          "&:hover": {
+            transform: "scale(1.05)",
+          },
+        }}
+        color="success"
+        variant="contained"
+      >
+        Buy
+      </Button>
     </>
   );
 };

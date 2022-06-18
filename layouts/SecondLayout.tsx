@@ -1,13 +1,12 @@
-import SecondHeader from "./Headers/SecondHeader"
+import SecondHeader from "./Headers/SecondHeader";
 type Props = {
-    children: JSX.Element,
-  };
+  children: JSX.Element;
+};
 export default function SecondLayout({ children }: Props) {
-  
-    return (
-      <>
-        <SecondHeader />
-        {children}
-      </>
-    )
-  }
+  return (
+    <>
+      <SecondHeader />
+      {children}
+    </>
+  );
+}

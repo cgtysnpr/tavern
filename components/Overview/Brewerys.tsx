@@ -74,7 +74,7 @@ const Brewerys = () => {
           variant="body2"
           component="p"
         >
-           0.000000  MEAD/day
+          0.000000 MEAD/day
         </Typography>
       </Box>
       <Box

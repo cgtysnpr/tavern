@@ -53,7 +53,6 @@ const MyWallet = () => {
               boxShadow: 2,
               justifyContent: "flex-start",
               border: "1px solid rgb(68 64 60)",
-
             }}
           >
             <Box
