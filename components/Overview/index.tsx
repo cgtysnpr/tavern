@@ -9,7 +9,7 @@ const Overview = () => {
       <Container maxWidth="md" sx={{mx:{xs:0,md:0,lg:6}, mb:5}}>
         <Typography
           color="primary.light"
-          variant="title"
+          variant="subtitle2"
           component="h1"
           sx={{ textAlign: "center", mt: 4 }}
         >
@@ -25,7 +25,7 @@ const Overview = () => {
         </Grid>
         <Typography
           color="primary.light"
-          variant="title"
+          variant="subtitle2"
           component="h1"
           sx={{ textAlign: "center", mt: 4 }}
         >

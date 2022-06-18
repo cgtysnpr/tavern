@@ -32,16 +32,6 @@ const typography = {
     fontWeight: baseHeadingProperties.fontWeightBold,
     ...baseHeadingProperties,
   },
-  title: {
-    fontSize: "36px",
-
-    "@media (min-width:992px)": {
-      fontSize: "36px",
-    },
-    lineHeight: 1.25,
-    fontWeight: baseHeadingProperties.fontWeightBold,
-    ...baseHeadingProperties,
-  },
   h2: {
     fontSize: "32px",
     "@media (min-width:992px)": {
@@ -101,13 +91,14 @@ const typography = {
     lineHeight: 1.625,
   },
   subtitle2: {
-    fontSize: "12px",
+    fontSize: "36px",
+
     "@media (min-width:992px)": {
-      fontSize: "14px",
+      fontSize: "36px",
     },
-    fontWeight: baseProperties.fontWeightLight,
-    fontFamily: baseHeadingProperties.fontFamily,
-    lineHeight: 1.625,
+    lineHeight: 1.25,
+    fontWeight: baseHeadingProperties.fontWeightBold,
+    ...baseHeadingProperties,
   },
   body1: {
     fontSize: "14px",
