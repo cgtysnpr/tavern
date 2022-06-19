@@ -187,7 +187,7 @@ const Brewery = () => {
             color="rgb(249 115 22)"
             sx={{
               textAlign: "center",
-              mt: 4,
+              mt: 2,
               "&:hover": { color: "rgb(251 146 60)" },
             }}
             component="h6"
@@ -208,7 +208,7 @@ const Brewery = () => {
             color="primary.light"
             sx={{
               textAlign: "center",
-              mt: 4,
+              mt: 2,
               "&:hover": { color: "rgb(251 146 60)" },
             }}
             component="h6"
@@ -216,7 +216,7 @@ const Brewery = () => {
           >
             USDC
           </Typography>
-          <Chip sx={{ mt: 4 }} label="Discount: 0%" color="warning" />
+          <Chip sx={{ mt: 2 }} size={"small"} label="Discount: 0%" color="warning" />
         </Box>
         <Box
           sx={{
@@ -231,7 +231,7 @@ const Brewery = () => {
             sx={{
               textAlign: "center",
               whiteSpace: "normal",
-              mt: 4,
+              mt: 2,
               "&:hover": { color: "rgb(251 146 60)" },
             }}
             component="h6"
@@ -239,7 +239,7 @@ const Brewery = () => {
           >
             LP Tokens
           </Typography>
-          <Chip sx={{ mt: 4 }} label="Discount: 0%" color="warning" />
+          <Chip sx={{ mt: 2 }} size="small"  label="Discount: 0%" color="warning" />
         </Box>
       </Stack>
       <Typography

@@ -35,12 +35,12 @@ const Tabs: React.FC<Props> = ({ currentTab, setCurrentTab }) => {
             lg: "space-between",
           }}
           sx={{ px: { xs: "unset", md: "unset", lg: 4 }, flexWrap: "wrap" }}
-          spacing={{ xs: 1, md: 2, lg: 4 }}
+          spacing={{ xs: 1, md: 4, lg: 4 }}
         >
           {tabsData?.map((data, i) => (
             <>
               <Box
-                key={`tabsData${i}`}
+                key={`tabsData${i}`} 
                 onClick={() => setCurrentTab(data.title)}
                 sx={{
                   display: "flex",

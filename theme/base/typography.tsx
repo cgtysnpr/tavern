@@ -72,7 +72,7 @@ const typography = {
     ...baseHeadingProperties,
   },
   h6: {
-    fontSize: "18px",
+    fontSize: "14px",
     "@media (min-width:992px)": {
       fontSize: "18px",
     },
