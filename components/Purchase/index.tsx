@@ -24,8 +24,8 @@ const Purchase = () => {
           direction={"row"}
           justifyContent="center"
           alignItems="center"
-          spacing={10}
-          sx={{ mt: 2, borderBottom: "1px solid #fed7aa" }}
+          spacing={{xs:0,md:5,lg:10}}
+          sx={{ mt: 2, borderBottom: "1px solid #fed7aa", flexWrap:'wrap' }}
         >
           <Box
             onClick={() => setTab("brewery")}

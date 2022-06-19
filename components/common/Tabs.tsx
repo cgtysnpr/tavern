@@ -21,7 +21,7 @@ const Tabs: React.FC<Props> = ({ currentTab, setCurrentTab }) => {
           height: "auto",
           background:
             "linear-gradient(to bottom,rgb(28 25 23/0.95),rgb(41 37 36/0.95),rgb(28 25 23/0.7))",
-          p: 2,
+          p: {xs:1,md:2,lg:2},
           borderRadius: "1.5rem",
           boxShadow: 2,
           border: "1px solid rgb(68 64 60)",
@@ -35,7 +35,7 @@ const Tabs: React.FC<Props> = ({ currentTab, setCurrentTab }) => {
             lg: "space-between",
           }}
           sx={{ px: { xs: "unset", md: "unset", lg: 4 }, flexWrap: "wrap" }}
-          spacing={{ xs: 2, md: 2, lg: 4 }}
+          spacing={{ xs: 1, md: 2, lg: 4 }}
         >
           {tabsData?.map((data, i) => (
             <>
