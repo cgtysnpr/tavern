@@ -8,7 +8,17 @@ import {
 import { faBook } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import Image from "next/image";
+import scrollDetector from "scroll-detector";
+import { useState } from "react";
 const SecondHeader = () => {
+  const [scrolled, setScrolled] = useState(false);
+  scrollDetector.on("scroll:down", () => {
+    setScrolled(true);
+  });
+  scrollDetector.on("at:top", () => {
+    setScrolled(false);
+  });
+
   return (
     <>
       <AppBar
@@ -20,9 +30,13 @@ const SecondHeader = () => {
           backgroundColor: {
             xs: "rgb(255 237 213)",
             md: "rgb(255 237 213)",
-            lg: "rgb(106 95 82)",
+            lg: "rgb(64 64 64/.5)",
+            ...(scrolled && {
+              lg: "rgb(106 95 82)",
+            }),
           },
           border: "none",
+          transition: "all 0.3s",
           display: "flex",
           alignItems: "center",
         }}

@@ -40,7 +40,7 @@ const Tabs: React.FC<Props> = ({ currentTab, setCurrentTab }) => {
           {tabsData?.map((data, i) => (
             <>
               <Box
-                key={`tabsData${i}`} 
+                key={`tabsData${i+2}`} 
                 onClick={() => setCurrentTab(data.title)}
                 sx={{
                   display: "flex",
