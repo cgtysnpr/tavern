@@ -20,7 +20,7 @@ const SecondHeader = () => {
           backgroundColor: {
             xs: "rgb(255 237 213)",
             md: "rgb(255 237 213)",
-            lg: "rgb(64 64 64/.5)",
+            lg: "rgb(106 95 82)",
           },
           border: "none",
           display: "flex",
